@@ -3,3 +3,15 @@
 *.swp
 .DS_Store
 *.ipynb
+
+# Exclude local files at or above GitHub's 100 MiB file limit.
+# Git ignores paths, not sizes; rescan when adding large artifacts.
+/audio/slurp_real.tar.gz
+/audio/slurp_synth.tar.gz
+
+# Generated Python caches.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
